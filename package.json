@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "minify-dir": "^1.0.6"
+  }
+}

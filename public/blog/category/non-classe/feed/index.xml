@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Archives des Non classé - Philéas informatique : assistance, dépannage, formation et conseil !</title>
+	<atom:link href="/blog/category/non-classe/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Sun, 03 Oct 2021 15:06:57 +0000</lastBuildDate>
+	<language>fr-FR</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+
+<image>
+	<url>/wp-content/uploads/2021/03/cropped-logo_-32x32.png</url>
+	<title>Archives des Non classé - Philéas informatique : assistance, dépannage, formation et conseil !</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Comment trouver de l’aide en informatique sur Quimper et Fouesnant</title>
+		<link>/blog/comment-trouver-de-laide-en-informatique-sur-quimper-et-fouesnant/</link>
+					<comments>/blog/comment-trouver-de-laide-en-informatique-sur-quimper-et-fouesnant/#respond</comments>
+		
+		<dc:creator><![CDATA[phileas]]></dc:creator>
+		<pubDate>Sun, 03 Oct 2021 15:06:57 +0000</pubDate>
+				<category><![CDATA[Non classé]]></category>
+		<guid isPermaLink="false">/?p=889</guid>
+
+					<description><![CDATA[<p>L’informatique est partout et il devient impossible de s’en passer. Que cela nous plaise ou non, il fait parti de notre quotidien, pour le meilleur et pour le pire. Sur...</p>
+<p>L’article <a rel="nofollow" href="/blog/comment-trouver-de-laide-en-informatique-sur-quimper-et-fouesnant/">Comment trouver de l’aide en informatique sur Quimper et Fouesnant</a> est apparu en premier sur <a rel="nofollow" href="/">Philéas informatique : assistance, dépannage, formation et conseil !</a>.</p>
+]]></description>
+		
+					<wfw:commentRss>/blog/comment-trouver-de-laide-en-informatique-sur-quimper-et-fouesnant/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Comment bien entretenir son ordinateur en 7 points !</title>
+		<link>/blog/comment-bien-entretenir-son-ordinateur-en-7-points/</link>
+					<comments>/blog/comment-bien-entretenir-son-ordinateur-en-7-points/#respond</comments>
+		
+		<dc:creator><![CDATA[phileas]]></dc:creator>
+		<pubDate>Thu, 26 Aug 2021 09:20:37 +0000</pubDate>
+				<category><![CDATA[Non classé]]></category>
+		<guid isPermaLink="false">/?p=806</guid>
+
+					<description><![CDATA[<p>L’article <a rel="nofollow" href="/blog/comment-bien-entretenir-son-ordinateur-en-7-points/">Comment bien entretenir son ordinateur en 7 points !</a> est apparu en premier sur <a rel="nofollow" href="/">Philéas informatique : assistance, dépannage, formation et conseil !</a>.</p>
+]]></description>
+		
+					<wfw:commentRss>/blog/comment-bien-entretenir-son-ordinateur-en-7-points/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>
