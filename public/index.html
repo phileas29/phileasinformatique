@@ -5,21 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Philéas informatique : assistance, dépannage, formation et conseil !</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand navbar-dark bg-dark">
-		<ul class="navbar-nav">
-			<li class="nav-item"><a class="nav-link" target="_blank" href="https://www.facebook.com/phileasinformatique/"><i class="fa fa-facebook" aria-hidden="true"></i> </a></li>
-			<li class="nav-item"><a class="nav-link" href="tel:0766624485"><i class="fa fa-phone"></i> </a></li>
-			<li class="nav-item"><a class="nav-link" href="mailto:contact@phileasinformatique.fr"><i class="fa fa-envelope"></i> </a></li>
-		</ul>
-	</nav>
     <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar-expand">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" target="_blank" href="https://www.facebook.com/phileasinformatique/"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                <li class="nav-item"><a class="nav-link" target="_blank" href="tel:+33766624485"><i class="fa fa-phone"></i> </a></li>
+                <li class="nav-item"><a class="nav-link" target="_blank" href="mailto:contact@phileasinformatique.fr"><i class="fa fa-envelope"></i> </a></li>
+            </ul>
+        </nav>
         <div class="container">
-            <a class="navbar-brand" href="/">Philéas informatique : assistance, dépannage, formation et conseil ! </a>
+            <a class="navbar-brand" href="/">Philéas informatique <span class="d-none d-md-inline">: assistance, dépannage, formation et conseil !</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -48,7 +50,7 @@
         </div>
     </nav>
 
-	<div class="bg-image" style="background-image: linear-gradient(to bottom, rgba(255,255,255,0.6) 0%,rgba(255,255,255,0.6) 100%), url('/img/bg.jpg'); ">
+	<div class="container-fluid bg-image" style="background-image: linear-gradient(to bottom, rgba(255,255,255,0.75) 0%,rgba(255,255,255,0.75) 100%), url('/img/bg.jpg'); ">
 		<div class="row align-items-center">
             <div class="col-xl-3 my-2">
                 <img class="mx-auto d-block img-fluid" src="/img/logo_cesu.png">
@@ -72,40 +74,44 @@
 	</div>
 
     <div class="container mt-5">
-        <div class="row">
+        <div class="row text-center">
             <div class="col-xl-3 my-2 d-flex align-items-stretch" >
-            	<div class="card text-center">
-                    <div class="card-body">
+            	<div class="card">
+                    <div class="card-body d-flex flex-column">
+                        <i style="font-size: 50px; line-height: 50px; height: 50px; width: 50px;" class="fa fa-comments my-4 mx-auto"></i>
                         <h2 class="card-title"><b>ASSISTANCE</b></h2>
                         <p class="card-text">Vous souhaitez de l’aide dans la prise en main de votre ordinateur, tablette, smartphone, imprimante, objet connecté, … ? Je peux convenir d’un temps avec vous pour vous aider à manier les outils numériques sur Quimper et Fouesnant !</p>
-                        <a href="/tarifs-detaillees/#assistance" class="btn btn-primary btn-lg">Voir plus</a>
+                        <a href="/tarifs-detaillees/#assistance" class="btn btn-primary btn-lg mt-auto">Voir plus</a>
                     </div>
                 </div>
             </div>
             <div class="col-xl-3 my-2 d-flex align-items-stretch" >
-            	<div class="card text-center">
-                    <div class="card-body">
+            	<div class="card">
+                    <div class="card-body d-flex flex-column">
+                        <i style="font-size: 50px; line-height: 50px; height: 50px; width: 50px;" class="fa fa-cog my-4 mx-auto"></i>
                         <h2 class="card-title"><b>DÉPANNAGE</b></h2>
                         <p class="card-text tex">Votre ordinateur, tablette, imprimante ne fonctionne plus comme vous le souhaitiez ? Il s’agit peut-être d’un problème matériel à cause d’un pièce défectueuse ! Je peux venir sur place pour diagnostiquer l’origine du problème et vous proposer un remplacement la pièce défectueuse pour résoudre le problème sur Quimper et Fouesnant.</p>
-                        <a href="/tarifs-detaillees/#depannage" class="btn btn-primary btn-lg">Voir plus</a>
+                        <a href="/tarifs-detaillees/#depannage" class="btn btn-primary btn-lg mt-auto">Voir plus</a>
                     </div>
                 </div>
             </div>
             <div class="col-xl-3 my-2 d-flex align-items-stretch" >
-            	<div class="card text-center">
-                    <div class="card-body">
+            	<div class="card">
+                    <div class="card-body d-flex flex-column">
+                        <i style="font-size: 50px; line-height: 50px; height: 50px; width: 50px;" class="fa-solid fa-user my-4 mx-auto"></i>
                         <h2 class="card-title"><b>FORMATION</b></h2>
                         <p class="card-text">Envie de vous perfectionner dans l’usage d’un logiciel ou simplement envie de découvrir toutes les fonctionnalités de votre ordinateur ? Je vous propose des cours réguliers à votre domicile pour vous accompagner dans le maniement de l’outil numérique sur Quimper et Fouesnant.</p>
-                        <a href="/tarifs-detaillees/#formation" class="btn btn-primary btn-lg">Voir plus</a>
+                        <a href="/tarifs-detaillees/#formation" class="btn btn-primary btn-lg mt-auto">Voir plus</a>
                     </div>
                 </div>
             </div>
             <div class="col-xl-3 my-2 d-flex align-items-stretch" >
-            	<div class="card text-center">
-                    <div class="card-body">
+            	<div class="card">
+                    <div class="card-body d-flex flex-column">
+                        <i style="font-size: 50px; line-height: 50px; height: 50px; width: 50px;" class="fa-solid fa-handshake my-4 mx-auto"></i>
                         <h2 class="card-title"><b>CONSEIL</b></h2>
                         <p class="card-text">Vous souhaitez acheter un nouvel appareil mais vous ne savez pas quoi choisir ? Je vous propose de discuter ensemble de votre projet d’achat en évaluant les biens disponibles sur le marché qui répondent au mieux à vos attentes sur Quimper et Fouesnant.</p>
-                        <a href="/tarifs-detaillees/#conseil" class="btn btn-primary btn-lg">Voir plus</a>
+                        <a href="/tarifs-detaillees/#conseil" class="btn btn-primary btn-lg mt-auto">Voir plus</a>
                     </div>
                 </div>
             </div>
@@ -115,24 +121,24 @@
     <div class="container-fluid bg-light mt-5 py-5">
 		<div class="container">
 			<div class="row">
-				<p class="h1 text-center mb-5">Quels sont les avantages de faire appel à moi ?</p>
-				<li>
-					<ul>GARANTIE : Bénéficiez d’une garantie de 14 jours sur toutes les prestations en cas de problèmes similaires ! </ul>
-					<ul>CRÉDIT D’IMPÔT : Mon agrément vous fait bénéficier d’un remboursement de la moitié du montant de toutes vos factures ! Même si vous n’êtes pas imposable ! Comment en bénéficier ? </ul>
-					<ul>DISPONIBILITÉ : 6j/7 de 9h à 19h</ul>
-					<ul>SÉCURITÉ : Port du masque, nettoyage des mains au gel hydroalcoolique</ul>
-					<ul>CONFIDENTIALITÉ : Toutes mes interventions sont réalisées dans le cadre du strict secret professionnel</ul>
-					<ul>DEVIS GRATUIT</ul>
-				</li>
+				<p class="h1 text-center mb-5"><b>Quels sont les avantages de faire appel à moi ?</b></p>
+				<ul class="list-group list-group-flush">
+					<li class="list-group-item">GARANTIE : Bénéficiez d’une garantie de 14 jours sur toutes les prestations en cas de problèmes similaires ! </li>
+					<li class="list-group-item">CRÉDIT D’IMPÔT : Mon agrément vous fait bénéficier d’un remboursement de la moitié du montant de toutes vos factures ! Même si vous n’êtes pas imposable ! Comment en bénéficier ? </li>
+					<li class="list-group-item">DISPONIBILITÉ : 6j/7 de 9h à 19h</li>
+					<li class="list-group-item">SÉCURITÉ : Port du masque, nettoyage des mains au gel hydroalcoolique</li>
+					<li class="list-group-item">CONFIDENTIALITÉ : Toutes mes interventions sont réalisées dans le cadre du strict secret professionnel</li>
+					<li class="list-group-item">DEVIS GRATUIT</li>
+                </ul>
 			</div>
 		</div>
     </div>
 
 	<div class="container">
 		<div class="row">
-			<p class="h1 text-center my-5">Qui suis-je ?</p>
-            <div class="col-xl-6" >
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate velit esse eos veritatis quidem autem laborum dicta nemo doloremque consequatur sit, dolorem aut aspernatur commodi ullam? Enim qui hic non.</p>
+			<p class="h1 text-center my-5"><b>Qui suis-je ?</b></p>
+            <div class="col-xl-6 mb-3" >
+                <img class="rounded img-fluid mx-auto d-block min-width-3" src="/img/photo_intervenant2.jpg">
 			</div>
             <div class="col-xl-6" >
 				<p class="text-center h2">Philéas PERON</p>
@@ -146,15 +152,15 @@
     <div class="container-fluid bg-light mt-5 py-5">
 		<div class="container">
 			<div class="row">
-				<p class="h1 text-center mb-5">Nous avons travaillé ensemble</p>
-                <img class="rounded img-fluid" src="https://dummyimage.com/900x400/ccc/000">
+				<p class="h1 text-center mb-5"><b>Nous avons travaillé ensemble</b></p>
+                <img class="img-fluid mx-auto d-block" style="max-width: 75%;" src="/img/repartition_clients.jpg">
 			</div>
 		</div>
     </div>
 
 	<div class="container">
-		<div class="row">
-			<p class="h1 text-center my-5">Qu’en ont-ils pensé ?</p>
+		<div class="row overflow-hidden">
+			<p class="h1 text-center my-5"><b>Qu’en ont-ils pensé ?</b></p>
 			<div>
 				<div class="tr-widget" data-id="1582" data-view="flash" data-lang=""><a href="https://trust.reviews/" class="trcr" target="_blank">Powered by<span>Trust.Reviews</span></a></div>
 				<script type="text/javascript" src="https://cdn.trust.reviews/widget/embed.min.js" defer></script>
@@ -165,7 +171,7 @@
     <div class="container-fluid bg-light mt-5 py-5">
 		<div class="container">
 			<div class="row">
-				<p class="h1 text-center mb-5">Faites le plein en conseils informatiques !</p>
+				<p class="h1 text-center mb-5"><b>Faites le plein en conseils informatiques !</b></p>
                 <img class="rounded img-fluid" src="https://dummyimage.com/900x400/ccc/000">
 			</div>
 		</div>
@@ -173,39 +179,55 @@
 
 	<div class="container">
 		<div class="row">
-			<p class="h1 text-center my-5">Foire aux questions</p>
-			<li>
-				<ul>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eius, totam ut quibusdam ratione eveniet similique cupiditate nesciunt voluptatum ipsum voluptates atque aliquid nemo consectetur necessitatibus, porro dolore beatae eaque.</ul>
-				<ul>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eius, totam ut quibusdam ratione eveniet similique cupiditate nesciunt voluptatum ipsum voluptates atque aliquid nemo consectetur necessitatibus, porro dolore beatae eaque.</ul>
-				<ul>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eius, totam ut quibusdam ratione eveniet similique cupiditate nesciunt voluptatum ipsum voluptates atque aliquid nemo consectetur necessitatibus, porro dolore beatae eaque.</ul>
-				<ul>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eius, totam ut quibusdam ratione eveniet similique cupiditate nesciunt voluptatum ipsum voluptates atque aliquid nemo consectetur necessitatibus, porro dolore beatae eaque.</ul>
-				<ul>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eius, totam ut quibusdam ratione eveniet similique cupiditate nesciunt voluptatum ipsum voluptates atque aliquid nemo consectetur necessitatibus, porro dolore beatae eaque.</ul>
-				<ul>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eius, totam ut quibusdam ratione eveniet similique cupiditate nesciunt voluptatum ipsum voluptates atque aliquid nemo consectetur necessitatibus, porro dolore beatae eaque.</ul>
-			</li>
+			<p class="h1 text-center my-5"><b>Foire aux questions</b></p>
+			<ul>
+				<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eius, totam ut quibusdam ratione eveniet similique cupiditate nesciunt voluptatum ipsum voluptates atque aliquid nemo consectetur necessitatibus, porro dolore beatae eaque.</li>
+				<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eius, totam ut quibusdam ratione eveniet similique cupiditate nesciunt voluptatum ipsum voluptates atque aliquid nemo consectetur necessitatibus, porro dolore beatae eaque.</li>
+				<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eius, totam ut quibusdam ratione eveniet similique cupiditate nesciunt voluptatum ipsum voluptates atque aliquid nemo consectetur necessitatibus, porro dolore beatae eaque.</li>
+				<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eius, totam ut quibusdam ratione eveniet similique cupiditate nesciunt voluptatum ipsum voluptates atque aliquid nemo consectetur necessitatibus, porro dolore beatae eaque.</li>
+				<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eius, totam ut quibusdam ratione eveniet similique cupiditate nesciunt voluptatum ipsum voluptates atque aliquid nemo consectetur necessitatibus, porro dolore beatae eaque.</li>
+				<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eius, totam ut quibusdam ratione eveniet similique cupiditate nesciunt voluptatum ipsum voluptates atque aliquid nemo consectetur necessitatibus, porro dolore beatae eaque.</li>
+            </ul>
 		</div>
 	</div>
 
-    <div class="container-fluid">
-		<div class="row align-items-center">
-			<div class="col-xl-8" >
+    <div class="container-fluid border-bottom border-secondary">
+		<div class="row align-items-center bg-primary">
+			<div class="col-xl-8 bg-light p-0" >
 				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d171007.4620254084!2d-4.120636904139656!3d47.95588662062411!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xde191ef2bd642bb3!2sPhil%C3%A9as%20informatique%20-%20assistance%2C%20d%C3%A9pannage%2C%20formation%20et%20conseil!5e0!3m2!1sen!2sfr!4v1629312868807!5m2!1sen!2sfr"
 					width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 			</div>
-			<div class="col-xl-4 text-center bg-dark text-white" >
+			<div class="col-xl-4 text-center text-white pb-3 mt-3" >
 				<p class="h2">Philéas PERON</p>
 				<p class="h3"> Informaticien sur Quimper et <br>Fouesnant</p>
-				<p>Tél : 07 66 62 44 85</p>
-				<p>Mail : contact@phileasinformatique.fr</p>
-				<p class="btn btn-primary btn-lg""><a href="tel:0766624485">M'appeler</a></p>
+				<p>Tél : <a class="link-light" target="_blank" href="tel:+33766624485">07 66 62 44 85</a></p>
+				<p>Mail : <a class="link-light" target="_blank" href="mailto:contact@phileasinformatique.fr">contact@phileasinformatique.fr</a></p>
+				<a class="btn btn-light btn-lg" href="tel:+33766624485">M'appeler</a>
 			</div>
 		</div>
     </div>
 
-    <div class="container-fluid bg-dark">
-        <div class="row text-center text-white pt-5 pb-2">
-            <p>© 2022 Philéas informatique : assistance, dépannage, formation et conseil !</p>
-			<a href="/mentions-legales/" target="_blank" rel="noopener noreferrer">Mentions Légales</a> - <a href="/politique-de-confidentialite/">Confidentialité</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" target="_blank" href="https://www.facebook.com/phileasinformatique/"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                <li class="nav-item"><a class="nav-link" target="_blank" href="tel:+33766624485"><i class="fa fa-phone"></i> </a></li>
+                <li class="nav-item"><a class="nav-link" target="_blank" href="mailto:contact@phileasinformatique.fr"><i class="fa fa-envelope"></i> </a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="text-white">© 2022 Philéas informatique : assistance, dépannage, formation et conseil !</div>
+            <div class="navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link link-secondary" href="/mentions-legales/" target="_blank">Mentions Légales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-secondary" href="/politique-de-confidentialite/" target="_blank">Confidentialité</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
+    </nav>
 </body>
 </html>
