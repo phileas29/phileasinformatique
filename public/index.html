@@ -37,7 +37,7 @@
             </ul>
         </nav>
         <div class="container">
-            <a class="navbar-brand" href="/">Philéas informatique <span class="d-none d-md-inline">: assistance, dépannage, formation et conseil !</span></a>
+            <a class="navbar-brand" href="/">Philéas informatique <span class="d-none d-xl-inline">: assistance, dépannage, formation et conseil !</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -46,11 +46,19 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/">Accueil</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="tarifs/">Tarifs</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="/tarifs/" role="button" aria-expanded="false">Tarifs</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/tarifs-de-deplacements/">Déplacement</a></li>
+                            <li><a class="dropdown-item" href="/tarifs-detaillees/">Prestation</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="credit-dimpot/">Moyens de paiement</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="/credit-dimpot/" role="button" aria-expanded="false">Moyens de paiement</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/paiement-par-cesu/">CESU</a></li>
+                            <li><a class="dropdown-item" href="/paiement-par-cheque/">Chèque</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="a-propos/">A propos</a>
@@ -155,7 +163,7 @@
 		<div class="row">
 			<p class="h1 text-center my-5"><b>Qui suis-je ?</b></p>
             <div class="col-xl-6 mb-3" >
-                <img class="rounded img-fluid mx-auto d-block min-width-3" src="/img/photo_intervenant2.jpg">
+                <img class="rounded img-fluid mx-auto d-block min-width-3" src="/img/photo_intervenant.jpg">
 			</div>
             <div class="col-xl-6" >
 				<p class="text-center h2">Philéas PERON</p>
@@ -188,8 +196,27 @@
     <div class="container-fluid bg-light mt-5 py-5">
 		<div class="container">
 			<div class="row">
-				<p class="h1 text-center mb-5"><b>Faites le plein en conseils informatiques !</b></p>
-                <img class="rounded img-fluid" src="https://dummyimage.com/900x400/ccc/000">
+				<p class="h1 text-center"><b>Faites le plein en conseils informatiques !</b></p>
+                <div class="col-xl-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Comment trouver de l’aide en informatique sur Quimper et Fouesnant</h5>
+                        <p class="card-text">L’informatique est partout et il devient impossible de s’en passer. Que cela nous plaise ou non, il...</p>
+                        <a href="/blog/comment-trouver-de-laide-en-informatique-sur-quimper-et-fouesnant/" class="btn btn-primary">Lire l'article</a>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">3 octobre 2021</small>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Comment bien entretenir son ordinateur en 7 points !</h5>
+                        <p class="card-text">Enlever la poussière du ventilateur A l’instar de biens des appareils électroménagers, la plupart des composants...</p>
+                        <a href="/blog/comment-bien-entretenir-son-ordinateur-en-7-points/" class="btn btn-primary">Lire l'article</a>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">26 août 2021</small>
+                    </div>
+                </div>
 			</div>
 		</div>
     </div>
@@ -278,7 +305,7 @@
 			</div>
 			<div class="col-xl-4 text-center text-white pb-3 mt-3" >
 				<p class="h2">Philéas PERON</p>
-				<p class="h3"> Informaticien sur Quimper et <br>Fouesnant</p>
+				<p class="h3">Informaticien sur Quimper et <br>Fouesnant</p>
 				<p>Tél : <a class="link-light" target="_blank" href="tel:+33766624485">07 66 62 44 85</a></p>
 				<p>Mail : <a class="link-light" target="_blank" href="mailto:contact@phileasinformatique.fr">contact@phileasinformatique.fr</a></p>
 				<a class="btn btn-light btn-lg" href="tel:+33766624485">M'appeler</a>
@@ -287,18 +314,16 @@
     </div>
 
 	<div class="container-fluid bg-dark border-bottom border-secondary text-white text-center py-3">
-		<div class="row">
+		<div class="row align-items-center">
             <div class="col-xl-4 my-auto" >
                 <p class="h2">Horaires</p><br>
                 <p class="h3">Du lundi au samedi<br><br>
                 9h - 19h</p>
 			</div>
             <div class="col-xl-4" >
-                <p class="h2">Ma page Facebook</p>
                 <a href="https://www.facebook.com/phileasinformatique" target="_blank"><img class="rounded img-fluid" src="/img/logo_fb.png"></a>
 			</div>
             <div class="col-xl-4" >
-                <p class="h2">Ma page "Répar'acteurs" :</p>
                 <a href="https://www.crma.bzh/reparacteur/phileas-informatique" target="_blank"><img class="rounded img-fluid" src="/img/logo_reparacteurs.jpg"></a>
 			</div>
 		</div>
