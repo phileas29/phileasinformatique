@@ -28,51 +28,7 @@
     
 </head>
 <body>
-    <nav id="navbar_top" class="navbar navbar-expand-lg navbar-light bg-light">
-        <nav class="navbar-expand d-none d-xl-block">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" target="_blank" href="https://www.facebook.com/phileasinformatique/"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-                <li class="nav-item"><a class="nav-link" target="_blank" href="tel:+33766624485"><i class="fa fa-phone"></i> </a></li>
-                <li class="nav-item"><a class="nav-link" target="_blank" href="mailto:contact@phileasinformatique.fr"><i class="fa fa-envelope"></i> </a></li>
-            </ul>
-        </nav>
-        <div class="container">
-            <a class="navbar-brand" href="/">Philéas informatique <span class="d-none d-xl-inline">: assistance, dépannage, formation et conseil !</span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Accueil</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="/tarifs/" role="button" aria-expanded="false">Tarifs</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/tarifs-de-deplacements/">Déplacement</a></li>
-                            <li><a class="dropdown-item" href="/tarifs-detaillees/">Prestation</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="/credit-dimpot/" role="button" aria-expanded="false">Moyens de paiement</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/paiement-par-cesu/">CESU</a></li>
-                            <li><a class="dropdown-item" href="/paiement-par-cheque/">Chèque</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="a-propos/">A propos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="blog/">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact/">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <iframe src="/header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
 
 	<div class="container-fluid bg-image" style="background-image: linear-gradient(to bottom, rgba(255,255,255,0.75) 0%,rgba(255,255,255,0.75) 100%), url('/img/bg.jpg'); ">
 		<div class="row align-items-center">
@@ -198,7 +154,7 @@
 			<div class="row">
 				<p class="h1 text-center"><b>Faites le plein en conseils informatiques !</b></p>
                 <div class="col-xl-4">
-                    <div class="card-body">
+                    <div class="card-body bg-white">
                         <h5 class="card-title">Comment trouver de l’aide en informatique sur Quimper et Fouesnant</h5>
                         <p class="card-text">L’informatique est partout et il devient impossible de s’en passer. Que cela nous plaise ou non, il...</p>
                         <a href="/blog/comment-trouver-de-laide-en-informatique-sur-quimper-et-fouesnant/" class="btn btn-primary">Lire l'article</a>
@@ -208,7 +164,7 @@
                     </div>
                 </div>
                 <div class="col-xl-4">
-                    <div class="card-body">
+                    <div class="card-body bg-white">
                         <h5 class="card-title">Comment bien entretenir son ordinateur en 7 points !</h5>
                         <p class="card-text">Enlever la poussière du ventilateur A l’instar de biens des appareils électroménagers, la plupart des composants...</p>
                         <a href="/blog/comment-bien-entretenir-son-ordinateur-en-7-points/" class="btn btn-primary">Lire l'article</a>
@@ -230,7 +186,7 @@
                     Qu'est-ce que le crédit d'impôt ? Y ai-je droit ? Comment faire pour y avoir droit ?
                     </button>
                 </h2>
-                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div id="flush-collapseOne" class="accordion-collapse collapse bg-light" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
                     Le crédit d’impôt Services à la personne (SAP) est un remboursement inconditionnel de 50% du montant de vos factures SAP par les impôts l’année civile suivant celle de votre facturation.<br><br>
                     
@@ -248,7 +204,7 @@
                     Est-ce que vous vous déplacez à domicile ?
                     </button>
                 </h2>
-                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div id="flush-collapseTwo" class="accordion-collapse collapse bg-light" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">Oui, je me déplace à domicile.</div>
                 </div>
             </div>
@@ -258,7 +214,7 @@
                     Combien de temps prend une intervention ?
                     </button>
                 </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div id="flush-collapseThree" class="accordion-collapse collapse bg-light" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
                     Généralement, si cela concerne une panne « basique », cela prend en moyenne 60 minutes. Mais c’est une moyenne.<br><br>
                     
@@ -272,7 +228,7 @@
                         Quelle est votre zone d'intervention ?
                     </button>
                 </h2>
-                <div id="flush-collapse5" class="accordion-collapse collapse" aria-labelledby="flush-heading5" data-bs-parent="#accordionFlushExample">
+                <div id="flush-collapse5" class="accordion-collapse collapse bg-light" aria-labelledby="flush-heading5" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
                     Je me déplace à votre domicile pour régler vos problèmes informatiques sur Fouesnant et Quimper essentiellement. Je peux me déplacer ailleurs mais d’éventuels frais de déplacement vous seront facturés.<br><br>
 
@@ -286,7 +242,7 @@
                         Le crédit d'impot de 50% est-il voué à disparaitre un jour ?
                     </button>
                 </h2>
-                <div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="flush-heading4" data-bs-parent="#accordionFlushExample">
+                <div id="flush-collapse4" class="accordion-collapse collapse bg-light" aria-labelledby="flush-heading4" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
                     Oui, une réforme des services à la personne entrera en vigueur en avril 2022. Elle transformera l’actuel crédit d’impôt en un crédit d’impôt instantané. Concrètement cela veut dire qu’à partir d’avril 2022, vous n’aurez plus à payer 60 euros pour 1 h de dépannage pour ensuite être remboursé de 30 euros l’année d’après. Vous aurez simplement à payez 30 euros au moment de l’intervention à votre domicile pour cet exemple.<br><br>
 
@@ -312,44 +268,7 @@
 			</div>
 		</div>
     </div>
-
-	<div class="container-fluid bg-dark border-bottom border-secondary text-white text-center py-3">
-		<div class="row align-items-center">
-            <div class="col-xl-4 my-auto" >
-                <p class="h2">Horaires</p><br>
-                <p class="h3">Du lundi au samedi<br><br>
-                9h - 19h</p>
-			</div>
-            <div class="col-xl-4" >
-                <a href="https://www.facebook.com/phileasinformatique" target="_blank"><img class="rounded img-fluid" src="/img/logo_fb.png"></a>
-			</div>
-            <div class="col-xl-4" >
-                <a href="https://www.crma.bzh/reparacteur/phileas-informatique" target="_blank"><img class="rounded img-fluid" src="/img/logo_reparacteurs.jpg"></a>
-			</div>
-		</div>
-	</div>
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <nav class="navbar navbar-expand">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" target="_blank" href="https://www.facebook.com/phileasinformatique/"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-                <li class="nav-item"><a class="nav-link" target="_blank" href="tel:+33766624485"><i class="fa fa-phone"></i> </a></li>
-                <li class="nav-item"><a class="nav-link" target="_blank" href="mailto:contact@phileasinformatique.fr"><i class="fa fa-envelope"></i> </a></li>
-            </ul>
-        </nav>
-        <div class="container">
-            <div class="text-white">© 2022 Philéas informatique : assistance, dépannage, formation et conseil !</div>
-            <div class="navbar-collapse">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link link-secondary" href="/mentions-legales/" target="_blank">Mentions Légales</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link link-secondary" href="/politique-de-confidentialite/" target="_blank">Confidentialité</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    
+    <iframe src="/footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
 </body>
 </html>
