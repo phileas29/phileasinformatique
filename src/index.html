@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-padding-top: 62px;">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
 <body>
-    <iframe src="/header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+    @@include('./header.html')
 
 	<div class="container-fluid bg-image" style="background-image: linear-gradient(to bottom, rgba(255,255,255,0.75) 0%,rgba(255,255,255,0.75) 100%), url('/img/bg.jpg'); ">
 		<div class="row align-items-center">
@@ -45,7 +45,7 @@
                         <i style="font-size: 50px; line-height: 50px; height: 50px; width: 50px;" class="fa fa-comments my-4 mx-auto"></i>
                         <h2 class="card-title"><b>ASSISTANCE</b></h2>
                         <p class="card-text">Vous souhaitez de l’aide dans la prise en main de votre ordinateur, tablette, smartphone, imprimante, objet connecté, … ? Je peux convenir d’un temps avec vous pour vous aider à manier les outils numériques sur Quimper et Fouesnant !</p>
-                        <a href="/tarifs-detaillees/#assistance" class="btn btn-primary btn-lg mt-auto">Voir plus</a>
+                        <a href="/tarifs/#assistance" class="btn btn-primary btn-lg mt-auto">Voir plus</a>
                     </div>
                 </div>
             </div>
@@ -55,7 +55,7 @@
                         <i style="font-size: 50px; line-height: 50px; height: 50px; width: 50px;" class="fa fa-cog my-4 mx-auto"></i>
                         <h2 class="card-title"><b>DÉPANNAGE</b></h2>
                         <p class="card-text tex">Votre ordinateur, tablette, imprimante ne fonctionne plus comme vous le souhaitiez ? Il s’agit peut-être d’un problème matériel à cause d’un pièce défectueuse ! Je peux venir sur place pour diagnostiquer l’origine du problème et vous proposer un remplacement la pièce défectueuse pour résoudre le problème sur Quimper et Fouesnant.</p>
-                        <a href="/tarifs-detaillees/#depannage" class="btn btn-primary btn-lg mt-auto">Voir plus</a>
+                        <a href="/tarifs/#depannage" class="btn btn-primary btn-lg mt-auto">Voir plus</a>
                     </div>
                 </div>
             </div>
@@ -65,7 +65,7 @@
                         <i style="font-size: 50px; line-height: 50px; height: 50px; width: 50px;" class="fa-solid fa-user my-4 mx-auto"></i>
                         <h2 class="card-title"><b>FORMATION</b></h2>
                         <p class="card-text">Envie de vous perfectionner dans l’usage d’un logiciel ou simplement envie de découvrir toutes les fonctionnalités de votre ordinateur ? Je vous propose des cours réguliers à votre domicile pour vous accompagner dans le maniement de l’outil numérique sur Quimper et Fouesnant.</p>
-                        <a href="/tarifs-detaillees/#formation" class="btn btn-primary btn-lg mt-auto">Voir plus</a>
+                        <a href="/tarifs/#formation" class="btn btn-primary btn-lg mt-auto">Voir plus</a>
                     </div>
                 </div>
             </div>
@@ -75,7 +75,7 @@
                         <i style="font-size: 50px; line-height: 50px; height: 50px; width: 50px;" class="fa-solid fa-handshake my-4 mx-auto"></i>
                         <h2 class="card-title"><b>CONSEIL</b></h2>
                         <p class="card-text">Vous souhaitez acheter un nouvel appareil mais vous ne savez pas quoi choisir ? Je vous propose de discuter ensemble de votre projet d’achat en évaluant les biens disponibles sur le marché qui répondent au mieux à vos attentes sur Quimper et Fouesnant.</p>
-                        <a href="/tarifs-detaillees/#conseil" class="btn btn-primary btn-lg mt-auto">Voir plus</a>
+                        <a href="/tarifs/#conseil" class="btn btn-primary btn-lg mt-auto">Voir plus</a>
                     </div>
                 </div>
             </div>
@@ -252,6 +252,6 @@
 		</div>
     </div>
     
-    <iframe src="/footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+    @@include('./footer.html')
 </body>
 </html>

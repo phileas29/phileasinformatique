@@ -1,5 +1,13 @@
 {
   "dependencies": {
-    "minify-dir": "^1.0.6"
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-minify-html": "^1.0.6",
+    "html-minifier": "^4.0.0",
+    "minify-dir": "^1.0.6",
+    "run-sequence": "^2.2.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-file-include": "^2.3.0"
   }
 }
