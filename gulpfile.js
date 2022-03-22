@@ -1,20 +1,14 @@
 const gulp = require('gulp');
 const fileinclude = require('gulp-file-include');
 const htmlmin = require('gulp-htmlmin');
-const log = require('fancy-log');
+const sync = require("browser-sync").create();
 
-function fileInclude(callback) {
+function generateHTML(callback) {
   gulp.src(['./src/**/*.html'])
     .pipe(fileinclude({
       prefix: '@@',
       basepath: '@file'
     }))
-    .pipe(gulp.dest('./predist'));
-  callback();
-};
-
-function htmlMin(callback) {
-  gulp.src(['./predist/**/*.html'])
     .pipe(htmlmin({
       collapseWhitespace: true,
       removeComments: true
@@ -23,18 +17,32 @@ function htmlMin(callback) {
   callback();
 };
 
-function putImg(callback) {
+function importImages(callback) {
   gulp.src('./src/img/**/*.*')
   .pipe(gulp.dest('dist/img'));
   callback();
 };
 
-function all(callback) {
-  (gulp.series('fileInclude','htmlMin', 'putImg')());
-  callback();
-};
+function watchFiles(cb) {
+  gulp.watch('./src/**/*.html', generateHTML);
+  gulp.watch('./src/img/*.*', importImages);
+  cb();
+}
 
-exports.fileInclude = fileInclude;
-exports.htmlMin = htmlMin;
-exports.putImg = putImg;
-exports.all = all;
+function browserSync(cb) {
+  sync.init({
+    server: {
+      baseDir: "./dist"
+    }
+  });
+
+  gulp.watch('./src/**/*.html', generateHTML);
+  gulp.watch('./src/img/*.*', importImages);
+  gulp.watch("./dist/**/*.html").on('change', sync.reload);
+  cb();
+}
+
+exports.html = generateHTML;
+exports.img = importImages;
+exports.sync = browserSync;
+exports.default = browserSync;

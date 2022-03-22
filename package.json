@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "browser-sync": "^2.27.9",
     "gulp-htmlmin": "^5.0.1",
     "gulp-minify-html": "^1.0.6",
     "html-minifier": "^4.0.0",
