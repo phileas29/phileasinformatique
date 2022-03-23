@@ -17,15 +17,15 @@ function generateHTML(callback) {
   callback();
 };
 
-function importImages(callback) {
-  gulp.src('./src/img/**/*.*')
-  .pipe(gulp.dest('dist/img'));
+function importAssets(callback) {
+  gulp.src('./src/assets/**/*.*')
+  .pipe(gulp.dest('dist/assets/'));
   callback();
 };
 
 function watchFiles(cb) {
   gulp.watch('./src/**/*.html', generateHTML);
-  gulp.watch('./src/img/*.*', importImages);
+  gulp.watch('./src/assets/*.*', importImages);
   cb();
 }
 
@@ -37,12 +37,12 @@ function browserSync(cb) {
   });
 
   gulp.watch('./src/**/*.html', generateHTML);
-  gulp.watch('./src/img/*.*', importImages);
+  gulp.watch('./src/assets/*.*', importAssets);
   gulp.watch("./dist/**/*.html").on('change', sync.reload);
   cb();
 }
 
 exports.html = generateHTML;
-exports.img = importImages;
+exports.asset = importAssets;
 exports.sync = browserSync;
 exports.default = browserSync;
