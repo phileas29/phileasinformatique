@@ -1,0 +1,26 @@
+@@include('template/upper_part.html',{
+  "path": "a-propos",
+  "title_min": "présentation de votre technicien informatique à domicile",
+  "index": "noindex",
+  "follow": "follow"
+}) 
+<body>
+    @@include('template/header.html')
+
+    <div class="container text-center py-5">
+      <div class="row">
+        <p class="h1">A propos</p>
+        <p>Créée début 2020, « Philéas informatique » est une entreprise qui vous aide à prendre en main ou à résoudre vos problèmes informatiques sur le secteur du Pays de Quimper et de Fouesnant.</p>
+        <p class="h1">Articles parus dans les journaux locaux</p>
+        <div class="col-xl-8 mb-3 d-flex align-items-center" >
+            <img class="rounded img-fluid mx-auto d-block min-width-3" src="/assets/img/article_ouest-france_20201210.jpg">
+        </div>
+        <div class="col-xl-4" >
+          <img class="rounded img-fluid mx-auto d-block min-width-3" src="/assets/img/article_le_telegramme_20201215.jpg">
+        </div>
+      </div>
+    </div>
+    
+    @@include('template/footer.html')
+</body>
+</html>

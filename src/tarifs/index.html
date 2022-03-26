@@ -1,0 +1,335 @@
+@@include('template/upper_part.html',{
+  "path": "tarifs",
+  "title_min": "prix de mes prestations",
+  "index": "noindex",
+  "follow": "follow"
+})
+<body>
+    @@include('template/header.html')
+    
+    <div class="container-fluid py-5">
+      <div class="container">
+        <div class="row">
+          <p class="h1 text-center">Tarifs</p>
+          <p>Le tarif global est l’addition de :</p>
+          <ul>
+            <li>tarifs de déplacement</li>
+            <li>tarif(s) de la ou des prestation(s)</li>
+          </ul>
+          <p>Toutes les prestations sont éligibles au crédit d’impôt de 50%.<br></p>
+
+          <p>Si vous ne trouvez pas une prestation qui correspond à votre demande, la tarification se fera à l’heure soit 60 euros/h. Après crédit d’impôt, cela vous reviendra à 30 euros/h.</p>
+
+          <p class="h2 text-center" id="deplacement">Frais de déplacement</p>
+
+
+          <p>Des frais de déplacement peuvent s’appliquer selon la prestation et selon le lieu d’intervention.</p>
+
+          <p class="h3">Frais de déplacement fixes</p>
+
+          <p>Conditions d’application : uniquement pour les prestations d’assistances et de dépannages dans les cas où la panne/problème ne serait pas résolu. Dans le cas où le problème/panne est résolu, ces frais sont inclus dans le cout de la prestation.<br>
+
+          Montant : 15 € forfaitaire</p>
+
+          <p class="h3">Frais de déplacement variables</p>
+          <table class="table table-bordered">
+            <thead class="table-light">
+              <tr>
+                <th scope="col">Zone</th>
+                <th scope="col">Communes</th>
+                <th scope="col" style="width:10%;">Montant</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">0</th>
+                <td>Gouesnac’h, Clohars-Fouesnant, Pleuven, Fouesnant, Bénodet, Quimper, Saint-Evarzec, La Forêt-Fouesnant, Combrit, Beg-Meil, Mousterlin</td>
+                <td>0,00 €/km</td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>Ile-Tudy, Plomelin, Concarneau, Trémeoc, Saint-Yvi, Ergué-Gabéric, Pluguffan</td>
+                <td>0,50 €/km</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>autres communes du pays de Cornouaille</td>
+                <td>1,00 €/km</td>
+              </tr>
+            </tbody>
+          </table>
+
+
+          <p class="h2 text-center" id="prestation">Tarifs des prestations</p>
+          <p class="h3" id="assistance">ASSISTANCE informatique</p>
+          <table class="table table-bordered">
+            <thead class="table-light">
+              <tr>
+                <th scope="col">Prestation</th>
+                <th scope="col" style="width:5%;">Durée</th>
+                <th scope="col" style="width:10%;">Montant 2022</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>
+                  <p><b>Remise à neuf de votre ordinateur :</b><br>
+                  Formatage + (ré)installation de Windows + installation des drivers, permet de retrouver les performances du début<br>
+                  Option : réinstallation de vos logiciels favoris</p>
+                </th>
+                <td>2h00</td>
+                <td>100 €</td>
+              </tr>
+              <tr>
+                <th>
+                  <p><b> Nettoyage de votre ordinateur :</b><br>
+                  Quand Windows devient lent, la suppression manuelle de nombreux fichiers, logiciels, et programmes inutiles permet d’accroître les performances  <br>
+                  Option : suppression des spyware/malwares (augmente encore les performances) </p>
+                </th>
+                <td>1h30</td>
+                <td>75 €</td>
+              </tr>
+              <tr>
+                <th>
+                  <p><b> Sauvegarde de vos données :</b><br>
+                    Vous êtes encore nombreux à risquer de tout perdre (une panne est si vite arrivée). Cette intervention n’est pas si compliqué </p>
+                </th>
+                <td>~1h/50Go</td>
+                <td>>=50 €</td>
+              </tr>
+              <tr>
+                <th>
+                  <p><b> Récupération de vos données :</b><br>
+                    (le client devra fournir un disque dur externe pour la copie des données)<br>
+                    1- Panne ordinateur : votre ordinateur ne démarre plus ou rame trop pour accéder aux données<br>
+                    2- Disque dur inaccessible (panne logique complexe)</p>
+                </th>
+                <td>2h00 - 2h30</td>
+                <td>120 € - 150 €</td>
+              </tr>
+              <tr>
+                <th>
+                  <p><b> Mise en place d’un réseau domestique : </b><br>
+                  Depuis n’importe quel ordinateur de la maison accéder aux fichiers et imprimante d’un autre ordinateur.<br>
+                  (Tarif pour un réseau de 2 postes.) </p>
+                </th>
+                <td>1h00</td>
+                <td>50 €</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="h3" id="formation">FORMATION informatique</p>
+          <p>Vous souhaitez vous améliorer dans le maniement de l’outil informatique ? Des cours particuliers vous sont proposés sur les thématiques suivantes (liste non exhaustive) :</p>
+          <ul>
+            <li>formation à l’informatique de base et prise en main de votre PC</li>
+            <li>découverte d’internet</li>
+            <li>découvert des systèmes d’exploitation (Windows, Linux, Mac, …)</li>
+            <li>utilisation des outils bureautiques</li>
+            <ul>
+              <li>logiciels de traitement de texte (Word, Writer)</li>
+              <li>gestionnaires de feuilles de calcul (Excel, Calc)</li>
+              <li>logiciels de présentation (Power Point, Impress)</li>
+              <li>logiciels de publication (Publisher, Draw)</li>
+            </ul>
+            <li>initiation à la sécurité informatique</li>
+            <li>utilisation des outils de messagerie (Outlook, Thunderbird)</li>
+            <li>découverte des logiciels libres</li>
+            <li>et bien d’autres choses encore !</li>
+          </ul>
+          <table class="table table-bordered">
+            <thead class="table-light">
+              <tr>
+                <th scope="col">Prestation</th>
+                <th scope="col" style="width:5%;">Durée</th>
+                <th scope="col" style="width:10%;">Montant 2022</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>cours ponctuel</th>
+                <td>1h00</td>
+                <td>60 €</td>
+              </tr>
+              <tr>
+                <th>cours réguliers*</th>
+                <td>1h00</td>
+                <td>40 €</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>* applicable dès 2 cours espacés d’au maximum 4 semaines</p>
+          <p class="h3" id="depannage">DÉPANNAGE informatique</p>
+          <table class="table table-bordered">
+            <thead class="table-light">
+              <tr>
+                <th scope="col">Prestation</th>
+                <th scope="col" style="width:5%;">Durée</th>
+                <th scope="col" style="width:10%;">Montant 2022</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>
+                  <p><b> Problèmes avec Internet :</b><br>
+                    Des pages publicitaires envahissent votre quotidien. Votre navigation semble avoir ralenti ou ne fonctionne plus depuis quelque temps. </p>
+                </th>
+                <td>1h00</td>
+                <td>60 €</td>
+              </tr>
+              <tr>
+                <th>
+                  <p><b> Virus – spywares – malwares – ransomwares :</b><br>
+                    Votre ordinateur ne fonctionne plus normalement !!! Un anti-virus seul ne protège pas suffisamment et ne suffit pas toujours à tout désinfecter.  </p>
+                </th>
+                <td>variable</td>
+                <td>variable</td>
+              </tr>
+              <tr>
+                <th>
+                  <p><b>  Pannes d’ordinateur simples :</b><br>
+                    Un écran bleu est apparu suivi d’un redémarrage et votre PC ne fonctionne plus. Ou alors votre ordinateur reste bloqué sur un écran noir… Pas de panique il y a des solutions. <br>
+                    (1H suffit dans 70% des cas) </p>
+                </th>
+                <td>1h00</td>
+                <td>60 €</td>
+              </tr>
+              <tr>
+                <th>
+                  <p><b> Pannes d’ordinateur complexes :</b><br>
+                    Un écran bleu est apparu suivi d’un redémarrage et votre PC ne fonctionne plus. Ou alors votre ordinateur reste bloqué sur un écran noir… Pas de panique il y a des solutions. </p>
+                </th>
+                <td>variable</td>
+                <td>variable</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="h3" id="installation">INSTALLATION  informatique</p>
+          <table class="table table-bordered">
+            <thead class="table-light">
+              <tr>
+                <th scope="col">Prestation</th>
+                <th scope="col" style="width:5%;">Durée</th>
+                <th scope="col" style="width:10%;">Montant 2022</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>
+                  <p><b> Installation d’un nouvel ordinateur :</b><br>
+                    Paramétrage 1er démarrage + configuration et raccordement à Internet <br>
+                    Option : installation logiciels et/ou paramétrage de votre messagerie (Outlook ou Windows Mail) </p>
+                </th>
+                <td>1h00</td>
+                <td>60 €</td>
+              </tr>
+              <tr>
+                <th>
+                  <p><b> Virus – spywares – malwares – ransomwares :</b><br>
+                    Votre ordinateur ne fonctionne plus normalement !!! Un anti-virus seul ne protège pas suffisamment et ne suffit pas toujours à tout désinfecter.  </p>
+                </th>
+                <td>variable</td>
+                <td>variable</td>
+              </tr>
+              <tr>
+                <th>
+                  <p><b>  Installation des box ADSL et box TV :</b><br>
+                    Mise en fonctionnement d’Internet, du téléphone et de la télévision numérique quelque soit votre fournisseur d’accès Internet. </p>
+                </th>
+                <td>1h00</td>
+                <td>60 €</td>
+              </tr>
+              <tr>
+                <th>
+                  <p><b> Installation d’un composant interne :</b><br>
+                    Nouveau disque dur, plus de mémoire, carte wifi, carte son, carte TV, carte graphique, lecteur de cartes mémoires, lecteur/graveur DVD, nouvelle alimentation, etc…<br>
+                    (si nous devons fournir la pièce, rajouter 1H pour l’achat et la livraison) </p>
+                </th>
+                <td>1h00</td>
+                <td>60 €</td>
+              </tr>
+              <tr>
+                <th>
+                  <p><b> Installation d’un périphérique externe :</b><br>
+                    Une imprimante, un scanner, une webcam, des enceintes, un disque dur externe ou multimédia, un appareil photo ou caméscope numérique, un téléphone portable, etc… </p>
+                </th>
+                <td>1~2h</td>
+                <td>60~120€</td>
+              </tr>
+              <tr>
+                <th>
+                  <p><b> Installation d’un logiciel :</b><br>
+                    Anti-virus, anti-spyware, anti-malware, firewall, retouche photo, montage vidéo, lecteur audio-vidéo, jeux PC… </p>
+                </th>
+                <td>1h00</td>
+                <td>60 €</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="h3" id="conseil">CONSEIL informatique</p>
+          <table class="table table-bordered">
+            <thead class="table-light">
+              <tr>
+                <th scope="col">Prestation</th>
+                <th scope="col" style="width:5%;">Durée</th>
+                <th scope="col" style="width:10%;">Montant 2022</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>
+                  <p><b>  Sur l’achat d’un ordinateur :</b><br>
+                    PC portable ou PC fixe? quelle gamme acheter ? nous évaluerons ensemble votre besoin réel pour ne pas se tromper. </p>
+                </th>
+                <td>1h00</td>
+                <td>60 €</td>
+              </tr>
+              <tr>
+                <th>
+                  <p><b> Sur le choix d’un logiciel :</b><br>
+                    Quel anti-virus ? quel firewall ? quel navigateur Internet ? pour plus de sécurité au quotidien. Stop! avant d’acheter demandez conseil, nous vous aiderons à faire des économies.  </p>
+                </th>
+                <td>1h00</td>
+                <td>60 €</td>
+              </tr>
+              <tr>
+                <th>
+                  <p><b> Sur l’achat d’une imprimante ou d’un scanner :</b><br>
+                    Multifonctions ? jet d’encre ou laser ? quelle marque? il n’y a pas que le prix d’achat qui compte… certains modèles peuvent coûter cher en entretien.  </p>
+                </th>
+                <td>1h00</td>
+                <td>60 €</td>
+              </tr>
+              <tr>
+                <th>
+                  <p><b> Sur l’achat d’un smartphone :</b><br>
+                    Combien de mémoire ? dual sim ou pas ? quelles fonctionnalités ? on peut vite être noyé devant tant de choix. voyons ensemble ce qui correspond au mieux à vos besoins.  </p>
+                </th>
+                <td>1h00</td>
+                <td>60 €</td>
+              </tr>
+              <tr>
+                <th>
+                  <p><b>  Sur le choix d’un forfait :</b><br>
+                    triplay ? téléphone inclus ? il arrive souvent qu’on ait une offre qui soit au dessus de nos besoins. voyons ensemble si l’on peut rationaliser cela </p>
+                </th>
+                <td>1~2h</td>
+                <td>60~120€</td>
+              </tr>
+              <tr>
+                <th>
+                  <p><b> Installation d’un logiciel :</b><br>
+                    Anti-virus, anti-spyware, anti-malware, firewall, retouche photo, montage vidéo, lecteur audio-vidéo, jeux PC… </p>
+                </th>
+                <td>1h00</td>
+                <td>60 €</td>
+              </tr>
+            </tbody>
+          </table>
+          <br>
+          <p>Si votre besoin n’est pas dans cette liste, n’hésitez pas à me contacter, je vous établirai un devis personnalisé.</p>
+        </div>
+      </div>
+    </div>
+    @@include('template/footer.html')
+</body>
+</html>
